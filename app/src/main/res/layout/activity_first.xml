@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/background_first"
+    tools:context=".firstActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logo_pro"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        />
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/fingerprint"
+            android:layout_below="@+id/desc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/desc"
+            android:text="Please place your finger on the scanner to verify your identity"
+            android:layout_below="@id/logo"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:id="@+id/errorText"
+            android:gravity="center"
+            android:layout_below="@id/icon"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:text="(Your device should have at least one fingerprint registered in device settings)"
+        android:layout_marginLeft="16dp"
+        android:textAlignment="center"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
